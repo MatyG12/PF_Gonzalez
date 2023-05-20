@@ -4,6 +4,59 @@
 /*SEPARACIONES DE MARGIN Y PADDING*/
 body {
   background-color: #444444;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav div a img {
+  width: 10rem;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .servicios {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+.card {
+  width: 15rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.card img {
+  height: 10rem;
+  width: 10rem;
+}
+
+footer {
+  background-color: #b52c00;
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+}
+
+.redes img {
+  width: 3rem;
+  height: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

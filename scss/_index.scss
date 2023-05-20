@@ -1,3 +1,60 @@
 body{
     background-color: $color-secundario;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav div a img{
+    width: 10rem;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $espacio-chico;
+}
+
+@media (min-width: $tablet) {
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: $espacio-medio;
+    }
+}
+
+@media (min-width: $desktop) {
+    .servicios{
+        grid-template-columns: repeat(3,1fr);
+        gap: $espacio-grande;
+    }
+}
+
+.card{
+    width: 15rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.card img{
+    height: 10rem;
+    width: 10rem;
+
+}
+
+
+footer {
+    background-color: $color-primario;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.redes img {
+    width: 3rem;
+    height: 3rem;
 }
