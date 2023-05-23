@@ -1,60 +1,101 @@
 body{
-    background-color: $color-secundario;
+    background-color: $color-cuarto;
     font-family: 'Montserrat', sans-serif;
 }
 
+
 nav div a img{
-    width: 10rem;
+    width: 6rem;
 }
 
-.servicios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: $espacio-chico;
+.navbar-brand{
+    color: $color-primario;
+} 
+.navbar-brand:hover{
+    color: $color-primario;
 }
 
-@media (min-width: $tablet) {
-    .servicios{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
-        gap: $espacio-medio;
-    }
+
+.dropdown-item{
+    color: white;
+    background-color: $color-cuarto;
 }
 
-@media (min-width: $desktop) {
-    .servicios{
-        grid-template-columns: repeat(3,1fr);
-        gap: $espacio-grande;
-    }
+.dropdown-menu{
+    background-color: $color-cuarto;
 }
 
-.card{
-    width: 15rem;
-    justify-content: center;
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: $color-primario;
+} 
+
+.navbar-collapse{
+    justify-content: end;
+}
+
+.banner{
+    background-image: url(../img/Fondo\ taller\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    height: 20rem;
+    padding: 3rem 1rem;
+    color: white;
+}
+
+
+
+main{
+    background-color: $color-primario;
+    color: white;
     text-align: center;
+    padding-top: $espacio-chico;
 }
 
-.card img{
-    height: 10rem;
-    width: 10rem;
 
+.favicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.favicon img{
+    height: 3rem;
+    width: 3rem;
+    margin: $espacio-chico;
+}
+
+
+.boton-servicios {
+    display: inline-block;
+    justify-content: end;
+    margin: $espacio-mini;
+    a{
+    text-decoration: none;   
+    color: $color-terciario; 
+}  
+}
+
 
 
 footer {
-    background-color: $color-primario;
+    background-color: $color-cuarto;
     text-align: center;
+    color: white;
+    padding-top: $espacio-chico;
 }
 
 .redes {
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 
 .redes img {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
+    margin: $espacio-mini;
 }

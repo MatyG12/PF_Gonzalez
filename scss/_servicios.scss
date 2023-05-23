@@ -1,0 +1,104 @@
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $espacio-chico;
+}
+
+.carousel-item img{
+    height: 10rem;
+}
+
+@media (min-width: $tablet){
+    .carrousel-item img{
+        height: 20rem;
+    }
+}
+
+@media (min-width: $desktop){
+    .carousel-item img{
+        height: 50rem;
+    }
+}
+
+.carrusel-alto{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.cards-padre h2{
+color: $color-primario;
+margin: $espacio-chico 0;
+}
+
+@media (min-width: $tablet) {
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: $espacio-medio;
+    }
+}
+
+@media (min-width: $desktop) {
+    .servicios{
+        grid-template-columns: repeat(3,1fr);
+        gap: $espacio-grande;
+    }
+}
+
+.card{
+    width: 15rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.card img{
+    height: 10rem;
+    width: 10rem;
+
+}
+
+.blanco{
+    background-color: $color-grisclaro;
+    padding: 0;
+}
+
+.caja{
+    background-color: $color-cuarto;
+    margin: 0 4rem;
+}
+
+.presupuesto{
+    background-color: $color-grisclaro;
+    margin: 0;
+    padding: 0;
+    color: $color-primario;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form input, form textarea{ 
+    display: flex;
+    margin-bottom: 10px;
+}
+
+form label{
+    display: flex;
+    margin-left: 10px;
+}
+
+
+
+

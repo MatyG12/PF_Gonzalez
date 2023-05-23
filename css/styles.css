@@ -3,12 +3,99 @@
 /*RESOLUCION DE PANTALLA*/
 /*SEPARACIONES DE MARGIN Y PADDING*/
 body {
-  background-color: #444444;
+  background-color: #1D1D1B;
   font-family: "Montserrat", sans-serif;
 }
 
 nav div a img {
-  width: 10rem;
+  width: 6rem;
+}
+
+.navbar-brand {
+  color: #fb6900;
+}
+
+.navbar-brand:hover {
+  color: #fb6900;
+}
+
+.dropdown-item {
+  color: white;
+  background-color: #1D1D1B;
+}
+
+.dropdown-menu {
+  background-color: #1D1D1B;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #fb6900;
+}
+
+.navbar-collapse {
+  justify-content: end;
+}
+
+.banner {
+  background-image: url(../img/Fondo\ taller\ 2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 20rem;
+  padding: 3rem 1rem;
+  color: white;
+}
+
+main {
+  background-color: #fb6900;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.favicon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.favicon img {
+  height: 3rem;
+  width: 3rem;
+  margin: 20px;
+}
+
+.boton-servicios {
+  display: inline-block;
+  justify-content: end;
+  margin: 10px;
+}
+.boton-servicios a {
+  text-decoration: none;
+  color: #a9a17a;
+}
+
+footer {
+  background-color: #1D1D1B;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.redes img {
+  width: 2rem;
+  height: 2rem;
+  margin: 10px;
 }
 
 .servicios {
@@ -17,6 +104,30 @@ nav div a img {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.carousel-item img {
+  height: 10rem;
+}
+
+@media (min-width: 768px) {
+  .carrousel-item img {
+    height: 20rem;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-item img {
+    height: 50rem;
+  }
+}
+.carrusel-alto {
+  padding: 0;
+  margin: 0;
+}
+
+.cards-padre h2 {
+  color: #fb6900;
+  margin: 20px 0;
 }
 
 @media (min-width: 768px) {
@@ -44,19 +155,38 @@ nav div a img {
   width: 10rem;
 }
 
-footer {
-  background-color: #b52c00;
-  text-align: center;
+.blanco {
+  background-color: #282829;
+  padding: 0;
 }
 
-.redes {
+.caja {
+  background-color: #1D1D1B;
+  margin: 0 4rem;
+}
+
+.presupuesto {
+  background-color: #282829;
+  margin: 0;
+  padding: 0;
+  color: #fb6900;
+}
+
+form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-.redes img {
-  width: 3rem;
-  height: 3rem;
+form input, form textarea {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: flex;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
