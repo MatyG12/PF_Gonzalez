@@ -98,6 +98,10 @@ footer {
   margin: 10px;
 }
 
+.redes img:hover {
+  transform: scale(2);
+}
+
 .servicios {
   display: flex;
   flex-direction: column;
@@ -187,6 +191,10 @@ form input, form textarea {
 form label {
   display: flex;
   margin-left: 10px;
+}
+
+.mapa {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */

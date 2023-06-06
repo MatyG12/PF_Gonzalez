@@ -16,6 +16,7 @@ nav div a img{
 }
 
 
+
 .dropdown-item{
     color: white;
     background-color: $color-cuarto;
@@ -98,4 +99,8 @@ footer {
     width: 2rem;
     height: 2rem;
     margin: $espacio-mini;
+}
+
+.redes img:hover{
+    transform: scale(2);
 }
