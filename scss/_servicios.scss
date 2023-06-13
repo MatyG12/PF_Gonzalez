@@ -7,12 +7,13 @@
     gap: $espacio-chico;
 }
 
+
 .carousel-item img{
     height: 10rem;
 }
 
 @media (min-width: $tablet){
-    .carrousel-item img{
+    .carousel-item img{
         height: 20rem;
     }
 }
@@ -54,13 +55,13 @@ margin: $espacio-chico 0;
     width: 15rem;
     justify-content: center;
     text-align: center;
+        img{
+        height: 10rem;
+        width: 10rem;
+    
+    }
 }
 
-.card img{
-    height: 10rem;
-    width: 10rem;
-
-}
 
 .blanco{
     background-color: $color-grisclaro;
@@ -96,6 +97,24 @@ form input, form textarea{
 form label{
     display: flex;
     margin-left: 10px;
+}
+
+.floating-social-icon {
+    position: fixed;
+    bottom: 20px; /* Puedes ajustar la posición vertical */
+    right: 20px; /* Puedes ajustar la posición horizontal */
+    z-index: 1; /* Asegúrate de que el ícono esté por encima de otros elementos */
+        a {
+        display: block;
+        width: 50px; /* Ajusta el tamaño del icono según tus necesidades */
+         height: 50px;
+        background-color: #3b5998; /* Cambia el color de fondo según la red social */
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        text-decoration: none;
+  }
 }
 
 

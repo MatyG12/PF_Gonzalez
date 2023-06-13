@@ -10,9 +10,13 @@ nav div a img{
 
 .navbar-brand{
     color: $color-primario;
+    &:hover{
+        color: $color-primario;
+    }
 } 
-.navbar-brand:hover{
-    color: $color-primario;
+
+.nav-link .dropdown-toggle:after{
+    color: white;
 }
 
 
@@ -38,7 +42,7 @@ nav div a img{
 }
 
 .banner{
-    background-image: url(../img/Fondo\ taller\ 2.jpg);
+    background-image: url(../img/fondo-taller-scaled.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
