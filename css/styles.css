@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*PALETA DE COLORES*/
 /*FUENTES DE LETRA*/
 /*RESOLUCION DE PANTALLA*/
@@ -6,6 +5,13 @@
 body {
   background-color: #1D1D1B;
   font-family: "Montserrat", sans-serif;
+}
+
+main {
+  background-color: #fb6900;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
 }
 
 nav div a img {
@@ -19,8 +25,9 @@ nav div a img {
   color: #fb6900;
 }
 
-.nav-link .dropdown-toggle:after {
-  color: white;
+.color {
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .dropdown-item {
@@ -35,7 +42,6 @@ nav div a img {
 .nav-link {
   color: white;
 }
-
 .nav-link:hover {
   color: #fb6900;
 }
@@ -54,19 +60,11 @@ nav div a img {
   color: white;
 }
 
-main {
-  background-color: #fb6900;
-  color: white;
-  text-align: center;
-  padding-top: 20px;
-}
-
 .favicon {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
 .favicon img {
   height: 3rem;
   width: 3rem;
@@ -95,13 +93,11 @@ footer {
   justify-content: center;
   list-style: none;
 }
-
 .redes img {
   width: 2rem;
   height: 2rem;
   margin: 10px;
 }
-
 .redes img:hover {
   transform: scale(2);
 }
@@ -112,20 +108,21 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding: 20px;
 }
 
 .carousel-item img {
-  height: 10rem;
+  height: 15rem;
 }
 
 @media (min-width: 768px) {
   .carousel-item img {
-    height: 20rem;
+    height: 25rem;
   }
 }
 @media (min-width: 1024px) {
   .carousel-item img {
-    height: 50rem;
+    height: 40rem;
   }
 }
 .carrusel-alto {
@@ -135,7 +132,8 @@ footer {
 
 .cards-padre h2 {
   color: #fb6900;
-  margin: 20px 0;
+  margin: 0 40px;
+  padding: 20px 0;
 }
 
 @media (min-width: 768px) {
@@ -153,7 +151,7 @@ footer {
   }
 }
 .card {
-  width: 15rem;
+  width: 18rem;
   justify-content: center;
   text-align: center;
 }
@@ -162,6 +160,37 @@ footer {
   width: 10rem;
 }
 
+.servicio_row {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+}
+
+.txt_servicio {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.imagen_servicio {
+  width: 40%;
+  overflow: hidden;
+}
+.imagen_servicio img {
+  width: 45rem;
+  height: 40rem;
+}
+
+@media (max-width: 768px) {
+  .imagen_servicio {
+    display: none;
+  }
+  .servicio_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .blanco {
   background-color: #282829;
   padding: 0;
@@ -171,42 +200,21 @@ footer {
   background-color: #1D1D1B;
   margin: 0 4rem;
 }
-
-.presupuesto {
-  background-color: #282829;
-  margin: 0;
-  padding: 0;
-  color: #fb6900;
+.caja .txt_servicio {
+  margin: 10px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-form input, form textarea {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-form label {
-  display: flex;
-  margin-left: 10px;
-}
-
-.floating-social-icon {
+.ir_arriba {
   position: fixed;
-  bottom: 20px; /* Puedes ajustar la posición vertical */
-  right: 20px; /* Puedes ajustar la posición horizontal */
-  z-index: 1; /* Asegúrate de que el ícono esté por encima de otros elementos */
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
 }
-.floating-social-icon a {
+.ir_arriba a {
   display: block;
-  width: 50px; /* Ajusta el tamaño del icono según tus necesidades */
+  width: 50px;
   height: 50px;
-  background-color: #3b5998; /* Cambia el color de fondo según la red social */
+  background-color: #3b5998;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -216,6 +224,24 @@ form label {
 
 .mapa {
   overflow: hidden;
+}
+
+.formulario {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+.formulario .presupuesto {
+  background-color: #282829;
+  margin: 0;
+  padding: 0;
+  color: #fb6900;
+  justify-content: center;
+  width: 70%;
+}
+.formulario .presupuesto .col {
+  margin: 3px;
 }
 
 /*# sourceMappingURL=styles.css.map */

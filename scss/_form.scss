@@ -1,0 +1,22 @@
+
+.formulario{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: $espacio-chico;
+
+    .presupuesto{
+    background-color: $color-grisclaro;
+    margin: 0;
+    padding: 0;
+    color: $color-primario;
+    justify-content: center;
+    width: 70%;
+    .col{
+        margin: 3px;
+    }
+}
+
+}
+
+

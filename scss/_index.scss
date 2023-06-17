@@ -4,21 +4,31 @@ body{
 }
 
 
+main{
+    background-color: $color-primario;
+    color: white;
+    text-align: center;
+    padding-top: $espacio-chico;
+}
+
+
 nav div a img{
     width: 6rem;
 }
 
+
 .navbar-brand{
     color: $color-primario;
-    &:hover{
+        &:hover{
         color: $color-primario;
     }
 } 
 
-.nav-link .dropdown-toggle:after{
-    color: white;
-}
 
+.color{
+    color: white !important;
+    text-decoration: none !important;
+}
 
 
 .dropdown-item{
@@ -26,20 +36,24 @@ nav div a img{
     background-color: $color-cuarto;
 }
 
+
 .dropdown-menu{
     background-color: $color-cuarto;
 }
 
+
 .nav-link{
     color: white;
-}
-.nav-link:hover{
+    &:hover{
     color: $color-primario;
 } 
+}
+
 
 .navbar-collapse{
     justify-content: end;
 }
+
 
 .banner{
     background-image: url(../img/fondo-taller-scaled.jpg);
@@ -52,25 +66,15 @@ nav div a img{
 }
 
 
-
-main{
-    background-color: $color-primario;
-    color: white;
-    text-align: center;
-    padding-top: $espacio-chico;
-}
-
-
 .favicon{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-}
-
-.favicon img{
+    justify-content: center; 
+    img{
     height: 3rem;
     width: 3rem;
     margin: $espacio-chico;
+}
 }
 
 
@@ -96,15 +100,16 @@ footer {
 .redes {
     display: flex;
     justify-content: center;
-    list-style: none;
-}
-
-.redes img {
+    list-style: none; 
+    img {
     width: 2rem;
     height: 2rem;
     margin: $espacio-mini;
-}
-
-.redes img:hover{
+    &:hover{
     transform: scale(2);
 }
+}
+}
+
+
+
